@@ -1,3 +1,20 @@
+# Element X iOS + React Native
+
+This is an experimental fork of the official [Element X iOS](https://github.com/element-hq/element-x-ios) with the sole purpose of testing brownfield support for Expo and React Native in large native-first codebases. Its commits serve as a reference for anyone interested in integrating React Native into an existing iOS app, especially those that don't want to refactor the whole project structure to accommodate React Native.
+
+This project uses Expo's brownfield isolated approach.
+
+## Integration steps
+
+Check commits for detailed steps, full instructions can be found in the [expo-brownfield documentation](https://docs.expo.dev/brownfield/overview/).
+
+1. **Create the Expo app**: Run `npx create-expo-app expo-app --template default@sdk-56` to set up a new Expo app.
+2. **Install expo-brownfield**: Add expo-brownfield to your project `npx expo install expo-brownfield` and generate an XCFramework.
+3. **Add React Native view**: Integrate the Expo app Swift Package into the existing iOS app.
+
+<details>
+<summary>Element X iOS</summary>
+
 [![Element iOS Matrix room #element-x-ios:matrix.org](https://img.shields.io/matrix/element-x-ios:matrix.org.svg?label=%23element-x-ios:matrix.org&logo=matrix&server_fqdn=matrix.org)](https://matrix.to/#/#element-x-ios:matrix.org)
 ![GitHub](https://img.shields.io/github/license/element-hq/element-x-ios)
 
@@ -55,3 +72,5 @@ This software is dual licensed by Element Creations Ltd (Element). It can be use
 (2) under the terms of a paid-for Element Commercial License agreement between you and Element (the terms of which may vary depending on what you and Element have agreed to). 
 
 Unless required by applicable law or agreed to in writing, software distributed under the Licenses is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licenses for the specific language governing permissions and limitations under the Licenses.
+
+</details>
