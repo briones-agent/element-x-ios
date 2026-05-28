@@ -27,6 +27,14 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         NSTextAttachment.registerViewProviderClass(PillAttachmentViewProvider.self, forFileType: InfoPlistReader.main.pillsUTType)
+        
+        // Bootstraps the embedded Expo/React Native runtime and registers
+        // the Safety Dashboard screen so it can be presented from anywhere
+        // in the app. The RN screen dismisses itself via the brownfield
+        // Navigation API (`popToNative()` from JavaScript).
+        ExpoIntegration.bootstrap()
+        ExpoIntegration.scheduleAutoPresentIfRequested()
+        
         return true
     }
     

@@ -49,3 +49,11 @@ test_output
 # Only commit Pkl packages (there may be other caches in here).
 Secrets/vendor/*
 !Secrets/vendor/package-2
+
+# expo-brownfield generated artifacts (not part of the fork)
+/integrate_expo.rb
+/.captures/
+ElementX/expo-app/.spm-deps/
+ElementX/expo-app/artifacts/
+ElementX/expo-app/ios/
+ElementX/expo-app/node_modules/

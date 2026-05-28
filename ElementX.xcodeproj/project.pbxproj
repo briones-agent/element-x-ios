@@ -16,8 +16,6 @@
 			dependencies = (
 			);
 			name = Periphery;
-			packageProductDependencies = (
-			);
 			productName = Periphery;
 		};
 /* End PBXAggregateTarget section */
@@ -479,6 +477,7 @@
 		4EAC427267424192964B16B3 /* AppSettingsHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BE9781699FB510E9263192 /* AppSettingsHook.swift */; };
 		4ED764A24F2A715C25CF07F1 /* TimelineMediaPreviewFileExportPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30856520F3263D0E195710D7 /* TimelineMediaPreviewFileExportPicker.swift */; };
 		4F2DF6138E87A4B8C2488CA3 /* VoiceMessageCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A84EE187D0C772E18A4E39 /* VoiceMessageCacheProtocol.swift */; };
+		4FBD8B87E64EBA4CF4BA71C6 /* ElementXExpoArtifacts-release in Frameworks */ = {isa = PBXBuildFile; productRef = B792B8D4B25BA9C6FEBB58F8 /* ElementXExpoArtifacts-release */; };
 		4FDC8A9764CFDA90CE035725 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2253D36E81E045E1CB432 /* Duration.swift */; };
 		4FE688FE9375B2FBF424146A /* TextBasedRoomTimelineViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EA0D8B0BBD8805F7D5A133 /* TextBasedRoomTimelineViewProtocol.swift */; };
 		4FF90E2242DBD596E1ED2E27 /* AppCoordinatorStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077D7C3BE199B6E5DDEC07EC /* AppCoordinatorStateMachine.swift */; };
@@ -1291,6 +1290,7 @@
 		D55AF9B5B55FEED04771A461 /* RoomFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A008E57D52B07B78DFAD1BB /* RoomFlowCoordinator.swift */; };
 		D5681C80D8281560AACE0035 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045253F9967A535EE5B16691 /* Label.swift */; };
 		D5B1531A72387D432939D4E0 /* RoomDirectorySearchProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0516C69708D5CBDE1A8E77EC /* RoomDirectorySearchProxyProtocol.swift */; };
+		D5B92141A9CB3DB354C762AC /* ExpoIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D84FF7BAE8D97CA4F62B1D /* ExpoIntegration.swift */; };
 		D5C2DA52162A978743A183F2 /* SessionVerificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AA084E10B80D64449C02A9 /* SessionVerificationTests.swift */; };
 		D5E771132BB36240DE38102F /* RoomMessageEventStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E815FF3CC5E5A355E3A25E /* RoomMessageEventStringBuilder.swift */; };
 		D5E8EE8A288EFCCF646860EA /* KnockRequestsBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F441A78A5CAA9E2937E463 /* KnockRequestsBannerView.swift */; };
@@ -1855,6 +1855,7 @@
 		2363DB6162BBCC511B67B527 /* AccessibilityTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AccessibilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23674BF78CE814366EBD8762 /* cy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cy; path = cy.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2389732B0E115A999A069083 /* NotificationSettingsScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsScreenCoordinator.swift; sourceTree = "<group>"; };
+		23D84FF7BAE8D97CA4F62B1D /* ExpoIntegration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ElementX/Sources/Application/ExpoIntegration.swift; sourceTree = SOURCE_ROOT; };
 		23E6EB7960BC9D0F7396B3BD /* RoomChangeRolesScreenRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChangeRolesScreenRow.swift; sourceTree = "<group>"; };
 		23EE69982BBA18C6D51AD08E /* UserProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreen.swift; sourceTree = "<group>"; };
 		240610DF32F3213BEC5611D7 /* BlockedUsersScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedUsersScreenViewModelTests.swift; sourceTree = "<group>"; };
@@ -3208,6 +3209,7 @@
 				A88328D7E17F73AB64501B51 /* SwiftSoup in Frameworks */,
 				E673A5442A9A912DE6CE097A /* Flow in Frameworks */,
 				E587A513B3E1EE9B56E9AB9C /* DSWaveformImageViews in Frameworks */,
+				4FBD8B87E64EBA4CF4BA71C6 /* ElementXExpoArtifacts-release in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5970,6 +5972,7 @@
 				780F74C73E826685A9DB289B /* Navigation */,
 				D64E20C9E4C486D5C764D7F3 /* Settings */,
 				703929219780FFABAC6380AA /* Windowing */,
+				23D84FF7BAE8D97CA4F62B1D /* ExpoIntegration.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -7335,6 +7338,7 @@
 				EDFB92E97D9AC4BA8540C18C /* SwiftSoup */,
 				4D7E6BFC89715FC3CF0349D0 /* Flow */,
 				2A4106A0A96DC4C273128AA5 /* DSWaveformImageViews */,
+				B792B8D4B25BA9C6FEBB58F8 /* ElementXExpoArtifacts-release */,
 			);
 			productName = ElementX;
 			productReference = 4CD6AC7546E8D7E5C73CEA48 /* ElementX.app */;
@@ -7519,6 +7523,7 @@
 				EC6D0C817B1C21D9D096505A /* XCRemoteSwiftPackageReference "Version" */,
 				EE40B0E16A55BD23ECBFFD22 /* XCRemoteSwiftPackageReference "matrix-rich-text-editor-swift" */,
 				C89CF7729E028671C5DC461E /* XCLocalSwiftPackageReference "compound-ios" */,
+				0CFD1FABD7E2AAC642319B42 /* XCLocalSwiftPackageReference "ElementXExpoArtifacts-release" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 681566846AF307E9BA4C72C6 /* Products */;
@@ -9208,6 +9213,7 @@
 				B773ACD8881DB18E876D950C /* WaveformSource.swift in Sources */,
 				08CB4BD12CEEDE6AAE4A18DD /* WindowManager.swift in Sources */,
 				AE5AAD9E32511544FDFA5560 /* WindowManagerProtocol.swift in Sources */,
+				D5B92141A9CB3DB354C762AC /* ExpoIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9522,9 +9528,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"-DRELEASE",
-				);
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BASE_BUNDLE_IDENTIFIER}.accessibility.tests";
 				PRODUCT_NAME = AccessibilityTests;
 				SDKROOT = iphoneos;
@@ -9543,9 +9547,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"-DDEBUG",
-				);
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BASE_BUNDLE_IDENTIFIER}.accessibility.tests";
 				PRODUCT_NAME = AccessibilityTests;
 				SDKROOT = iphoneos;
@@ -9567,9 +9569,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
-				OTHER_SWIFT_FLAGS = (
-					"-DIS_NSE",
-				);
+				OTHER_SWIFT_FLAGS = "-DIS_NSE";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BASE_BUNDLE_IDENTIFIER}.nse";
 				PRODUCT_DISPLAY_NAME = "$(APP_DISPLAY_NAME)";
 				PRODUCT_NAME = NSE;
@@ -9638,9 +9638,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"-DIS_MAIN_APP",
-				);
+				OTHER_SWIFT_FLAGS = "-DIS_MAIN_APP";
 				PILLS_UT_TYPE_IDENTIFIER = "$(BASE_BUNDLE_IDENTIFIER).pills";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BASE_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(APP_NAME)";
@@ -9670,9 +9668,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"-DIS_MAIN_APP",
-				);
+				OTHER_SWIFT_FLAGS = "-DIS_MAIN_APP";
 				PILLS_UT_TYPE_IDENTIFIER = "$(BASE_BUNDLE_IDENTIFIER).pills";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BASE_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(APP_NAME)";
@@ -9905,9 +9901,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"-DDEBUG",
-				);
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BASE_BUNDLE_IDENTIFIER}.ui.tests";
 				PRODUCT_NAME = UITests;
 				SDKROOT = iphoneos;
@@ -9926,9 +9920,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = (
-					"-DRELEASE",
-				);
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BASE_BUNDLE_IDENTIFIER}.ui.tests";
 				PRODUCT_NAME = UITests;
 				SDKROOT = iphoneos;
@@ -9950,9 +9942,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = "$(MARKETING_VERSION)";
-				OTHER_SWIFT_FLAGS = (
-					"-DIS_NSE",
-				);
+				OTHER_SWIFT_FLAGS = "-DIS_NSE";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BASE_BUNDLE_IDENTIFIER}.nse";
 				PRODUCT_DISPLAY_NAME = "$(APP_DISPLAY_NAME)";
 				PRODUCT_NAME = NSE;
@@ -10150,6 +10140,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		0CFD1FABD7E2AAC642319B42 /* XCLocalSwiftPackageReference "ElementXExpoArtifacts-release" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "ElementX/expo-app/artifacts/ElementXExpoArtifacts-release";
+		};
 		C89CF7729E028671C5DC461E /* XCLocalSwiftPackageReference "compound-ios" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "compound-ios";
@@ -10636,6 +10630,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6FC4820D8D4559CEECA064D7 /* XCRemoteSwiftPackageReference "matrix-rust-components-swift" */;
 			productName = MatrixRustSDK;
+		};
+		B792B8D4B25BA9C6FEBB58F8 /* ElementXExpoArtifacts-release */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CFD1FABD7E2AAC642319B42 /* XCLocalSwiftPackageReference "ElementXExpoArtifacts-release" */;
+			productName = "ElementXExpoArtifacts-release";
 		};
 		BA93CD75CCE486660C9040BD /* Collections */ = {
 			isa = XCSwiftPackageProductDependency;
